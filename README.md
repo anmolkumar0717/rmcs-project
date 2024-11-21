@@ -64,7 +64,7 @@ For example:
 
 ## 🙌 Acknowledgments  
 
-Special thanks to the developers and designers who made this project possible.  
+Special thanks to the developers #Anmol Chourasia and designers #Anmol chourasia who made this project possible.  
 Inspiration drawn from the classic Indian game and modern 3D technologies.  
 
 ---
