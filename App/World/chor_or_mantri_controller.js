@@ -18,8 +18,6 @@ export default class chor_or_mantri_Controller {
     playerinfo.subscribe((state)=>{
       
 
-      console.log(state.Chor)
-
       let text = state.Chor;
       text = text.toUpperCase()
 
@@ -97,7 +95,6 @@ export default class chor_or_mantri_Controller {
 
   instantiatedAnimations() {
     const idle = this.avatar2.animations;
-    console.log(idle);
     this.mixer = new THREE.AnimationMixer(this.avatar2.scene);
 
     this.animations = new Map();

@@ -52,7 +52,6 @@ export default class extra_char_controller {
 
   instantiatedAnimations() {
     const idle = this.avatar2.animations;
-    console.log(idle);
     this.mixer = new THREE.AnimationMixer(this.avatar2.scene);
 
     this.animations = new Map();

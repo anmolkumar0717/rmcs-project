@@ -8,7 +8,6 @@ export default class Character {
     this.scene = this.app.scene;
     this.assetStore = assetStore.getState()
     this.avatar = this.assetStore.loadedAssets.Avatar
-    console.log(this.avatar)
 
     this.instantiateCharacter();
   }

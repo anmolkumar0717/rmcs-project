@@ -9,7 +9,6 @@ export default class extra_char {
     this.physics = this.app.world.physics;
     this.assetStore = assetStore.getState()
     this.avatar = this.assetStore.loadedAssets.extra_char
-    console.log(this.avatar)
 
     this.instantiateCharacter();
   }

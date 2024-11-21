@@ -1,4 +1,3 @@
-import * as THREE from "three";
 import { killer } from "../Utils/Store.js";
 import App from "../App.js";
 import Physics from "./Physics.js";
@@ -88,7 +87,5 @@ export default class World {
       if(this.animationController) this.animationController.loop(deltaTime);
       if(this.extra_char_controller && this.killer){this.extra_char_controller.loop()}
     }
-    
-
   }
 }

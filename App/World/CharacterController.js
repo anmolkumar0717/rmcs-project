@@ -33,7 +33,6 @@ export default class CharacterController {
     this.replay = document.querySelector(".score11")
 
     playerinfo.subscribe((state) => {
-      console.log(state.Sipahi);
 
       this.sipahi = state.Sipahi;
       this.chor = state.Chor;
@@ -200,6 +199,7 @@ export default class CharacterController {
               })
               
             }
+
              else {
               killer.setState({ killer: true });
               sipahi_position.setState({
@@ -218,15 +218,14 @@ export default class CharacterController {
                     <td>${this.chor}</td>
                    `;
               tableBody.appendChild(row);
-              let row21= document.createElement("tr");
+              const row2= document.createElement("tr");
               row2.innerHTML = `
                     <td>${1000}</td>
                     <td>${"000"}</td>
                     <td>${800}</td>
                     <td>${500}</td>
                    `;
-              tableBody.appendChild(row21);
-              const row2= document.createElement("tr");
+              tableBody.appendChild(row2);
               
               setTimeout(() => this.losediv.classList.add("container2"), 1900);
               this.score_button.addEventListener("click",()=>{

@@ -9,7 +9,6 @@ export default class chor_or_mantri {
     this.physics = this.app.world.physics;
     this.assetStore = assetStore.getState()
     this.avatar = this.assetStore.loadedAssets.chor_or_mantri
-    console.log(this.avatar)
 
     this.instantiateCharacter();
   }

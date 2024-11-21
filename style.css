@@ -374,38 +374,56 @@ img{
   border-radius: 40px;
   
 }
-.scoretable{
-  background-color: #000000;
-  color: rgb(6, 128, 159);
-  position:fixed;
-  top: 30%;
+.scoretable {
+  background-color: #1e1e2f; /* Subtle gradient for depth */
+  color: #06a9c5;
+  position: fixed;
+  top: 25%;
   left: 27%;
-  height: 300px;
+  height: 380px;
   width: 700px;
   font-size: 2.5rem;
   font-family: "Satisfy", cursive;
   font-weight: 400;
   font-style: normal;
-    border-radius: 40px;
-  
+  border-radius: 30px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+  border: 2px solid #06a9c5;
+  overflow: hidden;
 }
-.scoretable img{
+
+.scoretable img {
   position: relative;
-  top: -20%;
+  top: 2%;
   left: 27%;
+  transform: scale(1.2);
 }
-#data-table{
-  padding: 40px 10px 20px 30px;
+
+#data-table {
+  padding: 25px 20px 25px 20px;
   position: relative;
-  top: -27%;
-  left: 5%;
-  background-color: #1f2021;
-  border-radius: 40px;
-  
+  top: 2%;
+  left: 13%;
+  background: linear-gradient(145deg, #292a3a, #1b1c29);
+  border-radius: 20px;
+  box-shadow: inset 0px 8px 15px rgba(0, 0, 0, 0.5);
+  color: white;
 }
-th, td {/* Visible black borders */
-  padding: 10px 40px 10px 20px;
+
+#data-table th, #data-table td {
+  padding: 15px 40px;
   text-align: center;
+  font-size: 1.2rem;
+}
+
+#data-table th {
+  font-weight: 600;
+  color: #06a9c5;
+}
+
+#data-table td {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }
 .score{
   position: relative;
@@ -450,26 +468,25 @@ th, td {/* Visible black borders */
   
 }
 
-.score11{
+.score11 {
+  margin-top: 25px;
   position: relative;
-  top: -12%;
-  left: 40%;
+  left: 42%;
   padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background: linear-gradient(135deg, #000000f9, hsl(110, 97%, 25%));
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 1.5rem;
+  font-family: "Satisfy", cursive;
+  color: #fff;
+  background: linear-gradient(145deg, #06a9c5, #048a99);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
+
 .score11:hover {
-  background: linear-gradient(135deg, #e80303, #000000);
-  transform: translateY(-2px);
-}
-.score11:active {
-  transform: translateY(0);
-  
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
 }
 
 .container1.fadeIn{
@@ -546,7 +563,7 @@ th, td {/* Visible black borders */
 .kill-info{
   background-color: rgb(210, 245, 154);
   height: 65px;
-  width: 190px;
+  width: 210px;
   position:fixed;
   top: 40%;
   left: 38%;
@@ -559,9 +576,9 @@ th, td {/* Visible black borders */
 }
 
 .kill-info1{
-  background-color: rgba(103, 202, 192, 0.896);
+  background-color: rgba(119, 229, 220, 0.896);
   height: 65px;
-  width: 190px;
+  width: 210px;
   position:fixed;
   top: 37%;
   left: 42%;

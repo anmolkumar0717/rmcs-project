@@ -16,8 +16,7 @@ export default class mantri_or_chor_Controller {
 
     playerinfo.subscribe((state)=>{
 
-      console.log(state.Mantri)
-
+      
       let text = state.Mantri;
       text = text.toUpperCase()
 
@@ -94,7 +93,6 @@ export default class mantri_or_chor_Controller {
 
   instantiatedAnimations() {
     const idle = this.avatar2.animations;
-    console.log(idle);
     this.mixer = new THREE.AnimationMixer(this.avatar2.scene);
 
     this.animations = new Map();
@@ -179,7 +177,6 @@ export default class mantri_or_chor_Controller {
   
       this.rigidBody.setNextKinematicTranslation(newPosition);
       this.character.position.lerp(this.rigidBody.translation(), 0.03);
-      console.log(this.character.position.x)
 
       
       if (this.character.position.x === -6.402011929974366) {
@@ -192,7 +189,6 @@ export default class mantri_or_chor_Controller {
 
       
       this.movement1 = -1.1 + this.movement1;
-      console.log(this.movement1)
       
       // -62.800000000000054
       if (this.movement1 === -50.70000000000004) {

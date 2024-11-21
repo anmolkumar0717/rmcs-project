@@ -15,8 +15,7 @@ export default class OtherCharacterController {
     
 
     playerinfo.subscribe((state)=>{
-
-      console.log(state.Raja)
+      
 
       let text = state.Raja;
       text = text.toUpperCase()
@@ -91,7 +90,6 @@ export default class OtherCharacterController {
 
   instantiatedAnimations() {
     const idle = this.avatar2.animations;
-    console.log(idle);
     this.mixer = new THREE.AnimationMixer(this.avatar2.scene);
 
     this.animations = new Map();

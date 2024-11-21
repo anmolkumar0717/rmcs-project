@@ -12,7 +12,7 @@ export default class Environment {
     this.physics = this.app.world.physics;
     this.assetStore = assetStore.getState()
     this.game_model = this.assetStore.loadedAssets.Raja_mantri_environment
-    console.log(this.game_model.scene)
+    
 
     this.loadEnvironment();
     this.loadModel()
